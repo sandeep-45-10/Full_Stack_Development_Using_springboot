@@ -1,0 +1,72 @@
+<form onSubmit={(e) => e.preventDefault()}>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder='Enter your first name'
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
+        />
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          placeholder='Enter your last name'
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
+        />
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder='Enter your phone number'
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder='Enter your email'
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
+          type="date"
+          name="date"
+          id="date"
+          placeholder='Select appointment date'
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+          min={new Date().toISOString().split('T')[0]} // Set the min attribute to today's date
+        />
+ 
+        <input
+          type="time"
+          name="startTime"
+          id="startTime"
+          placeholder='Select starting time'
+          value={startTime}
+          onChange={(e) => setStartTime(e.target.value)}
+          required
+        />
+        <input
+          type="time"
+          name="endTime"
+          placeholder='Select ending time'
+          id="endTime"
+          value={endTime}
+          onChange={(e) => setEndTime(e.target.value)}
+          required
+        />
+
+        <textarea
+          name="problemDescription"
+          id="problemDescription"
+          placeholder='Describe the reason for your appointment'
+          value={problemDescription}
+          onChange={(e) => setProblemDescription(e.target.value)}
+        />
+        
+        <input type="button" value="Check Availability" onClick={handleCheckAvailability} />
+      </form>
