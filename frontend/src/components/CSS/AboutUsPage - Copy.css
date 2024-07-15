@@ -1,0 +1,62 @@
+.about-container
+{
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 80px 200px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.startingletter
+{
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+.feedback 
+{
+    border: 3px solid white;
+    height: 400px;
+    width: 300px;
+    margin: auto;
+    border-radius: 30px;
+    margin-top: 150px;
+}
+
+
+.feedback form
+{
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+#feedbackareah
+{
+    margin-top: -50px;
+    border: 2px solid white;
+    height: 100px;
+    width: 250px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+#submitus
+{
+    margin-top: 60px;
+    border: 2px solid white;
+    height: 30px;
+    width: 140px;
+    margin-left: 75px;
+    border-radius: 10px;
+    background-color: rgb(123, 58, 152);
+    color: white;
+    cursor: pointer;
+}
+
+.feedback .header h2{
+    text-decoration: none;
+}

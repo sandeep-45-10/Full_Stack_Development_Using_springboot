@@ -1,0 +1,29 @@
+.containertel
+{
+    border: 3px solid white;
+    height: 700px;
+    width: 500px;
+    margin: auto;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.containertel form
+{
+    display: flex;
+    height: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+    
+}
+
+#telEmail, #telPhone, #telFirstName, #telLastName, #telTime, #telDate, #telProblemDescription
+{
+    height: 30px;
+    width: 350px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
